@@ -1,0 +1,26 @@
+.string-list-control {
+  &__list {
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+    & .components-base-control__field {
+      margin-bottom: 0;
+    }
+  }
+
+  &__field {
+    flex: 1 0 auto;
+  }
+
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+}

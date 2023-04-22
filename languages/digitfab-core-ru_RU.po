@@ -1,0 +1,297 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-12-22 12:00+0300\n"
+"PO-Revision-Date: 2022-12-22 12:00+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+msgid "Forms"
+msgstr "Формы"
+
+msgid "Database"
+msgstr "База данных"
+
+#: assets/admin.min.js:1
+msgid "Content"
+msgstr "Содержимое"
+
+msgid "Shortcode"
+msgstr "Шоткод"
+
+msgid "Info"
+msgstr "Информация"
+
+msgid "Messages"
+msgstr "Сообщения"
+
+msgid "Message"
+msgstr "Сообщение"
+
+msgid "Add new message"
+msgstr "Добавить новое сообщение"
+
+msgid "Edit message"
+msgstr "Редактировать сообщение"
+
+msgid "New message"
+msgstr "Новое сообщение"
+
+msgid "View message"
+msgstr "Просмотреть сообщение"
+
+msgid "Search messages"
+msgstr "Найти сообщения"
+
+msgid "Messages not found"
+msgstr "Сообщения не найдены"
+
+msgctxt "message"
+msgid "Add new"
+msgstr "Добавить новое"
+
+#: assets/admin.min.js:1
+msgid "Description"
+msgstr "Описание"
+
+#: assets/admin.min.js:1
+msgid "Link"
+msgstr "Ссылка"
+
+#: assets/admin.min.js:1
+msgid "Enable link"
+msgstr "Включить ссылку"
+
+#: assets/admin.min.js:1
+msgid "Yes"
+msgstr "Да"
+
+#: assets/admin.min.js:1
+msgid "No"
+msgstr "Нет"
+
+msgid "Contacts manager"
+msgstr "Менеджер контактов"
+
+msgid "Messages manager"
+msgstr "Менеджер сообщений"
+
+msgid "Services"
+msgstr "Услуги"
+
+msgid "Service"
+msgstr "Услуга"
+
+msgid "Service"
+msgstr "Услуга"
+
+msgctxt "service"
+msgid "Add new"
+msgstr "Добавить новую"
+
+msgid "Add new service"
+msgstr "Добавить новую услугу"
+
+msgid "Edit service"
+msgstr "Редактировать услугу"
+
+msgid "New service"
+msgstr "Новая услуга"
+
+msgid "View service"
+msgstr "Просмотреть услугу"
+
+msgid "Search services"
+msgstr "Найти услуги"
+
+msgid "Services not found"
+msgstr "Услуги не найдены"
+
+msgid "Categories"
+msgstr "Категории"
+
+msgid "Category"
+msgstr "Категория"
+
+msgid "Search categories"
+msgstr "Найти категории"
+
+msgid "All categories"
+msgstr "Все категории"
+
+msgid "View category"
+msgstr "Просмотреть категорию"
+
+msgid "Parent category"
+msgstr "Родительская категория"
+
+msgid "Parent category:"
+msgstr "Родительская категория:"
+
+msgid "Edit category"
+msgstr "Редактировать категорию"
+
+msgid "Update category"
+msgstr "Обновить категорию"
+
+msgid "Add new category"
+msgstr "Добавить новую категорию"
+
+msgid "New category name"
+msgstr "Название новой категории"
+
+msgid "Back to categories"
+msgstr "Перейти к категориям"
+
+msgid "Service category"
+msgstr "Категория услуги"
+
+#: assets/admin.min.js:1
+msgid "Price"
+msgstr "Цена"
+
+#: assets/admin.min.js:1
+msgctxt "price"
+msgid "Prefix"
+msgstr "Приставка"
+
+#: assets/admin.min.js:1
+msgctxt "price"
+msgid "Suffix"
+msgstr "Окончание"
+
+#: assets/admin.min.js:1
+msgctxt "price"
+msgid "from"
+msgstr "от"
+
+#: assets/admin.min.js:1
+msgctxt "price"
+msgid "to"
+msgstr "до"
+
+#: assets/admin.min.js:1
+msgid "Example: from, to"
+msgstr "Пример: от, до"
+
+#: assets/admin.min.js:1
+msgid "Example: per hour"
+msgstr "Пример: в час"
+
+msgid "Meta field value"
+msgstr "Значение произвольного поля"
+
+#: assets/admin.min.js:1
+msgid "Field"
+msgstr "Поле"
+
+#: assets/admin.min.js:1
+msgid "Field name"
+msgstr "Название поля"
+
+#: assets/admin.min.js:1
+msgid "Field value:"
+msgstr "Значение поля:"
+
+#: assets/admin.min.js:1
+msgid "Search"
+msgstr "Поиск"
+
+#: assets/admin.min.js:1
+msgid "Load more"
+msgstr "Загрузить еще"
+
+#: assets/admin.min.js:1
+msgid "Clear"
+msgstr "Очистить"
+
+#: assets/admin.min.js:1
+msgid "Adv. services"
+msgstr "Доп. услуги"
+
+#: assets/admin.min.js:1
+msgid "Title"
+msgstr "Заголовок"
+
+#: assets/admin.min.js:1
+msgid "Page title"
+msgstr "Заголовок страницы"
+
+#: assets/admin.min.js:1
+msgid "Add"
+msgstr "Добавить"
+
+#: assets/admin.min.js:1
+msgid "Advantages"
+msgstr "Преимущества"
+
+#: assets/admin.min.js:1
+msgid "Selected"
+msgstr "Выбрано"
+
+#: assets/admin.min.js:1
+msgid "Available"
+msgstr "Доступно"
+
+#: assets/admin.min.js:1
+msgid "Move up"
+msgstr "Наверх"
+
+#: assets/admin.min.js:1
+msgid "Move down"
+msgstr "Вниз"
+
+#: assets/admin.min.js:1
+msgid "Remove"
+msgstr "Удалить"
+
+#: assets/admin.min.js:1
+msgctxt "button"
+msgid "Read more"
+msgstr "Подробнее"
+
+#: assets/admin.min.js:1
+msgid "Service query loop"
+msgstr "Цикл запроса (услуги)"
+
+#: assets/admin.min.js:1
+msgid "Adv. filters"
+msgstr "Доп. фильтры"
+
+#: assets/admin.min.js:1
+msgid "Select records"
+msgstr "Выберите записи"
+
+#: assets/admin.min.js:1
+msgid "Selected records"
+msgstr "Выбранные записи"
+
+#: assets/admin.min.js:1
+msgid "Only the specified entries will be shown."
+msgstr "Будут показываться только указанные записи."
+
+#: assets/admin.min.js:1
+msgid "Hide on"
+msgstr "Скрывать на"
+
+#: assets/admin.min.js:1
+msgid "Mobile"
+msgstr "Мобильные"
+
+#: assets/admin.min.js:1
+msgid "Tablet"
+msgstr "Планшеты"
+
+#: assets/admin.min.js:1
+msgid "Desktop"
+msgstr "Настольные"
+
+#: assets/admin.min.js:1
+msgid "Responsive control"
+msgstr "Настройка отзывчивости"

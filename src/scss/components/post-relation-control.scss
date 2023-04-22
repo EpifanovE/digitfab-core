@@ -1,0 +1,54 @@
+.post-relation-control {
+
+  &__filter {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-bottom: 10px;
+
+    & .components-base-control__field {
+      margin-bottom: 0;
+    }
+  }
+
+  &__search-field {
+    flex: 1 0 auto;
+  }
+
+  &__list {
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    transition: background-color .2s;
+    cursor: pointer;
+
+    &_checked {
+      background-color: #dddddd;
+      font-weight: bold;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+    
+    &:hover {
+      background-color: #eee;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item-button {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,71 @@
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/scss/admin.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************/
+.post-relation-control__filter {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.post-relation-control__filter .components-base-control__field {
+  margin-bottom: 0;
+}
+.post-relation-control__search-field {
+  flex: 1 0 auto;
+}
+.post-relation-control__list {
+  margin-bottom: 10px;
+}
+.post-relation-control__item {
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.post-relation-control__item_checked {
+  background-color: #dddddd;
+  font-weight: bold;
+}
+.post-relation-control__item:last-child {
+  border-bottom: none;
+}
+.post-relation-control__item:hover {
+  background-color: #eee;
+}
+.post-relation-control__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.post-relation-control__item-button {
+  margin-left: auto;
+}
+
+.string-list-control__list {
+  margin-bottom: 10px;
+}
+.string-list-control__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.string-list-control__item .components-base-control__field {
+  margin-bottom: 0;
+}
+.string-list-control__field {
+  flex: 1 0 auto;
+}
+.string-list-control__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.column-id {
+  width: 70px;
+}
+
+/*# sourceMappingURL=admin.css.map*/

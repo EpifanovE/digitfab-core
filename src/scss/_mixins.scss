@@ -1,0 +1,11 @@
+@use "sass:math";
+
+@mixin bp-up($media) {
+    @each $name, $width in $breakpoints {
+        @if $name == $media {
+            @media only screen and (min-width: #{$width}) {
+                @content;
+            }
+        }
+    }
+}

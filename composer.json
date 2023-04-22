@@ -1,0 +1,14 @@
+{
+    "name": "digitfab/core",
+    "autoload": {
+        "psr-4": {
+            "Digitfab\\Core\\": "inc/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Evgeny Epifanov",
+            "email": "workeev@gmail.com"
+        }
+    ]
+}
