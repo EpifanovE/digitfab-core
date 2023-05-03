@@ -19,9 +19,6 @@ module.exports =  {
         // METABOX
         "breadcrumbs-metabox": path.resolve(__dirname, './src/js/metaboxes/breadcrumbs.tsx'),
         "seo-metabox": path.resolve(__dirname, './src/js/metaboxes/seo.tsx'),
-
-        // OPTIONS
-        "seo-options": path.resolve(__dirname, './src/js/options/SeoOptions/index.tsx'),
     },
     output: {
         path: path.resolve(__dirname, './assets'),

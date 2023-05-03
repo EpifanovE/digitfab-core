@@ -22,7 +22,7 @@ use Digitfab\Core\Modules\Messages;
 use Digitfab\Core\Modules\MetaFieldBlock;
 use Digitfab\Core\Modules\PriceBlock;
 use Digitfab\Core\Modules\QueryLoopBlock;
-use Digitfab\Core\Modules\SEO\SeoModule;
+use Digitfab\Core\Modules\SeoModule;
 use Digitfab\Core\Modules\TitleBlock;
 use Digitfab\Core\Modules\WpMailSmtp;
 use Digitfab\Core\Plugin;
@@ -52,13 +52,6 @@ $digitfabCorePlugin = new Plugin([
 $digitfabCorePlugin->singleton(Loader::class, new Loader());
 
 $digitfabCorePlugin->set('api_namespace', 'digitfab/v1');
-
-$digitfabCorePlugin->singleton(SeoModule::class, function (\Digitfab\Core\Container $container) {
-    return new SeoModule(
-        $container->get(Loader::class),
-        $container->get('api_namespace')
-    );
-});
 
 function digitfabCore(): Plugin
 {
