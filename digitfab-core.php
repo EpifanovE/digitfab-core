@@ -15,15 +15,13 @@
 use Digitfab\Core\Activator;
 use Digitfab\Core\Loader;
 use Digitfab\Core\Modules\BlockEditor;
+use Digitfab\Core\Modules\Breadcrumbs;
 use Digitfab\Core\Modules\CF7\DatabaseMessages;
 use Digitfab\Core\Modules\CookieNotice;
 use Digitfab\Core\Modules\Core;
 use Digitfab\Core\Modules\Messages;
 use Digitfab\Core\Modules\MetaFieldBlock;
-use Digitfab\Core\Modules\PriceBlock;
-use Digitfab\Core\Modules\QueryLoopBlock;
 use Digitfab\Core\Modules\SeoModule;
-use Digitfab\Core\Modules\TitleBlock;
 use Digitfab\Core\Modules\WpMailSmtp;
 use Digitfab\Core\Plugin;
 
@@ -39,13 +37,10 @@ $digitfabCorePlugin = new Plugin([
     BlockEditor::class,
     Messages::class,
     DatabaseMessages::class,
-    \Digitfab\Core\Modules\Breadcrumbs::class,
+    Breadcrumbs::class,
     WpMailSmtp::class,
     CookieNotice::class,
     MetaFieldBlock::class,
-    PriceBlock::class,
-    TitleBlock::class,
-//    QueryLoopBlock::class,
     SeoModule::class,
 ]);
 

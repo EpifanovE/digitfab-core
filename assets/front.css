@@ -29,20 +29,34 @@
   }
 }
 
-.wp-block-digitfab-breadcrumb {
+.wp-block-digitfab-breadcrumbs {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   list-style-type: none;
   padding: 0;
 }
-.wp-block-digitfab-breadcrumb__item:after {
+.wp-block-digitfab-breadcrumbs__item:after {
   content: "»";
   display: inline-block;
   margin-left: 8px;
 }
-.wp-block-digitfab-breadcrumb__item:last-child:after {
+.wp-block-digitfab-breadcrumbs__item:last-child:after {
   content: none;
+}
+
+.wp-block-group.digitfab-grid-block {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .wp-block-group.digitfab-grid-block_cols_2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .wp-block-group.digitfab-grid-block_cols_3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=front.css.map*/

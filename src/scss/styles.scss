@@ -28,7 +28,7 @@
   }
 }
 
-.wp-block-digitfab-breadcrumb {
+.wp-block-digitfab-breadcrumbs {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -46,4 +46,20 @@
       content: none;
     }
   }
+}
+
+.wp-block-group.digitfab-grid-block {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .wp-block-group.digitfab-grid-block_cols_2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wp-block-group.digitfab-grid-block_cols_3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }

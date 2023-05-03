@@ -10,14 +10,14 @@ const BlockEdit = ({attributes, setAttributes,}) => {
     return (
         <div {...useBlockProps()}>
             <ServerSideRender
-                block="digitfab/breadcrumb"
+                block="digitfab/breadcrumbs"
                 attributes={{...attributes, editorView: true}}
             />
         </div>
     );
 };
 
-registerBlockType('digitfab/breadcrumb', {
+registerBlockType('digitfab/breadcrumbs', {
     icon: navigation,
     edit: BlockEdit,
 });

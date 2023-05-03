@@ -16,6 +16,8 @@ class Core extends Module
         $this->loader->addAction('wp_enqueue_scripts', $this, 'enqueueAssets');
         $this->loader->addFilter('posts_where', $this, 'addQueryParams', 10, 2);
         $this->loader->addAction('pre_get_posts', $this, 'modifyAdminSearch');
+
+        add_editor_style(plugin_dir_url(dirname(__FILE__, 2)) . 'assets/front.css');
     }
 
     public function getName(): string

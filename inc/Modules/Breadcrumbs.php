@@ -38,42 +38,31 @@ class Breadcrumbs extends Module
         $blockAssetFile = include(plugin_dir_path(dirname(__FILE__, 2)) . 'assets/block-breadcrumbs.min.asset.php');
 
         wp_register_script(
-            'digitfab-block-breadcrumb',
+            'digitfab-block-breadcrumbs',
             plugin_dir_url(dirname(__FILE__, 2)) . 'assets/block-breadcrumbs.min.js',
             $blockAssetFile['dependencies'],
             $blockAssetFile['version']
         );
 
-        register_block_type('digitfab/breadcrumb', [
-            'editor_script' => 'digitfab-block-breadcrumb',
+        register_block_type('digitfab/breadcrumbs', [
+            'editor_script' => 'digitfab-block-breadcrumbs',
             "render_callback" => [$this, 'blockRenderCallback'],
             'api_version' => 2,
             "category" => "digitfab",
             "supports" => [
-                "align" => ["wide", "full"],
                 "anchor" => true,
                 "className" => true,
                 "color" => [
-                    "gradients" => true,
                     "link" => true,
                     "__experimentalDefaultControls" => [
                         "background" => true,
                         "text" => true
                     ]
                 ],
-                "spacing" => [
-                    "margin" => true,
-                    "padding" => true
-                ],
                 "typography" => [
                     "fontSize" => true,
-                    "lineHeight" => true,
                     "__experimentalFontFamily" => true,
-                    "__experimentalFontStyle" => true,
-                    "__experimentalFontWeight" => true,
-                    "__experimentalLetterSpacing" => true,
                     "__experimentalTextTransform" => true,
-                    "__experimentalTextDecoration" => true,
                     "__experimentalDefaultControls" => [
                         "fontSize" => true,
                         "fontAppearance" => true,
@@ -83,7 +72,7 @@ class Breadcrumbs extends Module
                 "__unstablePasteTextInline" => true,
                 "__experimentalSlashInserter" => true
             ],
-            "title" => __('Breadcrumb', 'digitfab-core'),
+            "title" => __('Breadcrumbs', 'digitfab-core'),
             'attributes' => [
                 'editorView' => [
                     'type' => 'boolean',
@@ -146,11 +135,8 @@ class Breadcrumbs extends Module
     public function blockRenderCallback($attrs)
     {
         if (!empty($attrs['editorView'])) {
-            $html = '';
-            $html .= '<nav aria-label="breadcrumbs" class="rank-math-breadcrumb">';
-            $html .= '<p><a href="#">Home</a><span class="separator"> » </span><a href="#">Category</a><span class="separator"> » </span><a href="#">SubCategory</a></p>';
-            $html .= '</nav>';
-            return $html;
+            $wrapperAttributes = get_block_wrapper_attributes();
+            return '<ol ' .$wrapperAttributes. '><li class="wp-block-digitfab-breadcrumb__item"><a href="#"><span>Главная</span></a></li><li class="wp-block-digitfab-breadcrumb__item"><a href="#"><span>Категория</span></a></li><li class="wp-block-digitfab-breadcrumb__item"><span>Новая страница</span></li></ol>';
         }
 
         $pages = [
