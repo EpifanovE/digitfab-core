@@ -88,7 +88,7 @@ class DatabaseMessages extends Module
      */
     public function settingsTabTemplate(): void
     {
-        $postId = $_GET['post'];
+        $postId = $_GET['post'] ?? null;
 
         if (empty($postId)) {
             return;

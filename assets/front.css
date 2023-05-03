@@ -1,6 +1,7 @@
 /*!*********************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/scss/styles.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
 .wp-block-digitfab-cookie-notice {
   position: fixed;
   z-index: 9999;
@@ -26,6 +27,22 @@
   .hide-on-desktop {
     display: none !important;
   }
+}
+
+.wp-block-digitfab-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style-type: none;
+  padding: 0;
+}
+.wp-block-digitfab-breadcrumb__item:after {
+  content: "»";
+  display: inline-block;
+  margin-left: 8px;
+}
+.wp-block-digitfab-breadcrumb__item:last-child:after {
+  content: none;
 }
 
 /*# sourceMappingURL=front.css.map*/

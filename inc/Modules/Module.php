@@ -27,4 +27,18 @@ abstract class Module
     {
         return apply_filters('digitfab/core/' . $this->getName(), false);
     }
+
+    public function onActivatePlugin(): void
+    {
+        if (method_exists($this, 'doActivatePlugin')) {
+            $this->doActivatePlugin();
+        }
+    }
+
+    public function onDeactivatePlugin(): void
+    {
+        if (method_exists($this, 'doDeactivatePlugin')) {
+            $this->doDeactivatePlugin();
+        }
+    }
 }

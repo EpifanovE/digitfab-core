@@ -27,3 +27,23 @@
     display: none !important;
   }
 }
+
+.wp-block-digitfab-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style-type: none;
+  padding: 0;
+
+  &__item {
+    &:after {
+      content: '»';
+      display: inline-block;
+      margin-left: 8px;
+    }
+
+    &:last-child:after {
+      content: none;
+    }
+  }
+}

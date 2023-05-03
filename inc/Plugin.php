@@ -12,6 +12,10 @@ if (!defined('ABSPATH')) {
 
 class Plugin extends Container
 {
+    /**
+     * @template Type
+     * @var array<class-string<Type>>
+     */
     protected array $modules;
 
     public function __construct(array $modules = [])
@@ -44,5 +48,14 @@ class Plugin extends Container
             false,
             dirname(dirname(plugin_basename(__FILE__))) . '/languages/'
         );
+    }
+
+    /**
+     * @template Type
+     * @return  array<class-string<Type>>
+     */
+    public function getModules(): array
+    {
+        return $this->modules;
     }
 }

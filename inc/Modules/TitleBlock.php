@@ -107,10 +107,10 @@ class TitleBlock extends Module
             return '';
         }
 
-        $tag_name = 'h2';
+        $tagName = 'h2';
 
         if (isset($attributes['level'])) {
-            $tag_name = 0 === $attributes['level'] ? 'p' : 'h' . $attributes['level'];
+            $tagName = 0 === $attributes['level'] ? 'p' : 'h' . $attributes['level'];
         }
 
         $classes = [];
@@ -123,12 +123,12 @@ class TitleBlock extends Module
             $classes[] = 'has-link-color';
         }
 
-        $wrapper_attributes = get_block_wrapper_attributes(array('class' => implode(' ', $classes)));
+        $wrapperAttributes = get_block_wrapper_attributes(['class' => implode(' ', $classes)]);
 
         return sprintf(
             '<%1$s %2$s>%3$s</%1$s>',
-            $tag_name,
-            $wrapper_attributes,
+            $tagName,
+            $wrapperAttributes,
             $title
         );
     }

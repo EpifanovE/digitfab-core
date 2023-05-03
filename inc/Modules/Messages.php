@@ -129,4 +129,70 @@ class Messages extends Module
 
         endswitch;
     }
+
+    public function doActivatePlugin()
+    {
+        if (!$this->isEnabled()) {
+            return;
+        }
+
+        add_role(
+            'df_messages_manager',
+            __('Messages manager', 'digitfab-core'),
+            [
+                "edit_message" => true,
+                "read_message" => true,
+                "delete_message" => true,
+                "edit_messages" => true,
+                "edit_others_messages" => true,
+                "delete_messages" => true,
+                "publish_messages" => true,
+                "read_private_messages" => true,
+                "delete_private_messages" => true,
+                "delete_published_messages" => true,
+                "delete_others_messages" => true,
+                "edit_private_messages" => true,
+                "edit_published_messages" => true,
+                "read" => true,
+            ]
+        );
+
+        $admin = get_role('administrator');
+
+        $admin->add_cap("edit_message");
+        $admin->add_cap("read_message");
+        $admin->add_cap("delete_message");
+        $admin->add_cap("edit_messages");
+        $admin->add_cap("edit_others_messages");
+        $admin->add_cap("delete_messages");
+        $admin->add_cap("publish_messages");
+        $admin->add_cap("read_private_messages");
+        $admin->add_cap("delete_private_messages");
+        $admin->add_cap("delete_published_messages");
+        $admin->add_cap("delete_others_messages");
+        $admin->add_cap("edit_private_messages");
+        $admin->add_cap("edit_published_messages");
+    }
+
+    public function doDeactivatePlugin()
+    {
+        remove_role('df_messages_manager');
+
+        $admin = get_role('administrator');
+
+        $admin->remove_cap("edit_message");
+        $admin->remove_cap("read_message");
+        $admin->remove_cap("delete_message");
+        $admin->remove_cap("edit_messages");
+        $admin->remove_cap("edit_others_messages");
+        $admin->remove_cap("delete_messages");
+        $admin->remove_cap("publish_messages");
+        $admin->remove_cap("read_private_messages");
+        $admin->remove_cap("delete_private_messages");
+        $admin->remove_cap("delete_published_messages");
+        $admin->remove_cap("delete_others_messages");
+        $admin->remove_cap("edit_private_messages");
+        $admin->remove_cap("edit_published_messages");
+        $admin->remove_cap("edit_messages");
+    }
 }

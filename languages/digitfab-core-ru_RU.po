@@ -76,18 +76,20 @@ msgstr "Да"
 msgid "No"
 msgstr "Нет"
 
-msgid "Contacts manager"
-msgstr "Менеджер контактов"
+msgid "Services manager"
+msgstr "Менеджер услуг"
 
 msgid "Messages manager"
 msgstr "Менеджер сообщений"
 
+msgid "Testimonials manager"
+msgstr "Менеджер отзывов"
+
+#: assets/admin.min.js:1
 msgid "Services"
 msgstr "Услуги"
 
-msgid "Service"
-msgstr "Услуга"
-
+#: assets/admin.min.js:1
 msgid "Service"
 msgstr "Услуга"
 
@@ -228,10 +230,6 @@ msgid "Add"
 msgstr "Добавить"
 
 #: assets/admin.min.js:1
-msgid "Advantages"
-msgstr "Преимущества"
-
-#: assets/admin.min.js:1
 msgid "Selected"
 msgstr "Выбрано"
 
@@ -295,3 +293,52 @@ msgstr "Настольные"
 #: assets/admin.min.js:1
 msgid "Responsive control"
 msgstr "Настройка отзывчивости"
+
+#: assets/admin.min.js:1
+msgid "Breadcrumbs"
+msgstr "Цепочка навигации"
+
+#: assets/admin.min.js:1
+msgid "Taxonomy"
+msgstr "Таксономия"
+
+#: assets/admin.min.js:1
+msgid "Term"
+msgstr "Элемент"
+
+#: assets/admin.min.js:1
+msgctxt "person"
+msgid "Name"
+msgstr "Имя"
+
+#: assets/admin.min.js:1
+msgid "Company"
+msgstr "Компания"
+
+#: assets/admin.min.js:1
+msgid "Rating"
+msgstr "Рейтинг"
+
+#: assets/admin.min.js:1
+msgid "Data"
+msgstr "Данные"
+
+msgctxt "breadcrumbs"
+msgid "Home"
+msgstr "Главная"
+
+#: assets/admin.min.js:1
+msgid "SEO-title"
+msgstr "SEO-заголовок"
+
+#: assets/admin.min.js:1
+msgid "SEO-description"
+msgstr "SEO-описание"
+
+#: assets/admin.min.js:1
+msgid "Keywords"
+msgstr "Ключевые слова"
+
+#: assets/admin.min.js:1
+msgid "Disable indexing"
+msgstr "Отключить индексирование"

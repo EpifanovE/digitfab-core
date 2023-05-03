@@ -68,4 +68,19 @@
   width: 70px;
 }
 
+.components-tab-panel__tabs-item.active-tab:after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--wp-admin-theme-color);
+}
+
+.df-settings {
+  padding: 0 30px 0 0;
+}
+.df-settings__row {
+  margin-bottom: 30px;
+}
+
 /*# sourceMappingURL=admin.css.map*/

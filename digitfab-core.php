@@ -22,7 +22,7 @@ use Digitfab\Core\Modules\Messages;
 use Digitfab\Core\Modules\MetaFieldBlock;
 use Digitfab\Core\Modules\PriceBlock;
 use Digitfab\Core\Modules\QueryLoopBlock;
-use Digitfab\Core\Modules\Services;
+use Digitfab\Core\Modules\SEO\SeoModule;
 use Digitfab\Core\Modules\TitleBlock;
 use Digitfab\Core\Modules\WpMailSmtp;
 use Digitfab\Core\Plugin;
@@ -39,17 +39,26 @@ $digitfabCorePlugin = new Plugin([
     BlockEditor::class,
     Messages::class,
     DatabaseMessages::class,
-    \Digitfab\Core\Modules\RankMath::class,
+    \Digitfab\Core\Modules\Breadcrumbs::class,
     WpMailSmtp::class,
     CookieNotice::class,
-    Services::class,
     MetaFieldBlock::class,
     PriceBlock::class,
     TitleBlock::class,
-    QueryLoopBlock::class,
+//    QueryLoopBlock::class,
+    SeoModule::class,
 ]);
 
 $digitfabCorePlugin->singleton(Loader::class, new Loader());
+
+$digitfabCorePlugin->set('api_namespace', 'digitfab/v1');
+
+$digitfabCorePlugin->singleton(SeoModule::class, function (\Digitfab\Core\Container $container) {
+    return new SeoModule(
+        $container->get(Loader::class),
+        $container->get('api_namespace')
+    );
+});
 
 function digitfabCore(): Plugin
 {
@@ -63,7 +72,7 @@ add_action('after_setup_theme', function () use ($digitfabCorePlugin) {
     $digitfabCorePlugin->run();
 });
 
-$activator = new Activator();
+$activator = new Activator($digitfabCorePlugin);
 
 register_activation_hook(__FILE__, function () use ($activator) {
     $activator->activate();
